@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Login</title>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <h1>Logo</h1>
+                <ul class="navItems">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <form action="/submit">
+                    <input type="button" value="login">
+                </form>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <h2>Login</h2>
+                <div class="box">
+                    <form action="/submit" method="post" autocomplete="on">
+                        <input type="email" name="email" id="emailLogin" placeholder="Email" required><br>
+                        <input type="password" name="password" id="passwordLogin" placeholder="Password" required><br>
+                        <input type="checkbox" name="checkbox" id="checkboxLogin">
+                        <label for="checkboxLogin">Remember me</label>
+                        <a href="">Forgot password?</a><br>
+                        <button type="submit">Login</button>
+                    </form>
+                    <p>Don't have an account?<a href="">Register</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
